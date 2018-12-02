@@ -10,15 +10,7 @@ pub fn question1() {
     let mut drift = 0;
 
     for line in BufReader::new(file).lines() {
-        let line = match line {
-            Ok(line) => line,
-            Err(error) => {
-                panic!(
-                    "Reading line from buffer failed: {:?}",
-                    error
-                )
-            }
-        };
+        let line = line.expect("Reading line from buffer failed");
 
         let frequency: i32 = line.parse().expect("There was a problem converting String to i32");
 
@@ -43,6 +35,7 @@ pub fn question2() {
 
 
     let mut frequency_drifted: HashSet<i32> = HashSet::new();
+    frequency_drifted.insert(0);
 
     let mut drift = 0;
     'outer: loop {
