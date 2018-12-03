@@ -2,7 +2,7 @@
 use std::fs::File;
 use std::io::{BufRead, BufReader};
 
-pub fn question1() {
+pub fn puzzle1() {
     let filename = "input/2.1.txt";
     let file = File::open(filename).expect("There was a problem opening the file:");
 
@@ -30,7 +30,7 @@ pub fn question1() {
     println!("Checksum: {}", two_count * three_count)
 }
 
-pub fn question2() {
+pub fn puzzle2() {
     let filename = "input/2.2.txt";
     let file = File::open(filename).expect("There was a problem opening the file:");
 
