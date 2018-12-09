@@ -13,7 +13,7 @@ struct Claim {
 }
 
 pub fn puzzle1() {
-    let filename = "input/3.1.txt";
+    let filename = "input/3.txt";
     let file = File::open(filename).expect("There was a problem opening the file:");
 
     let re = Regex::new(r"#(\d*)\s@\s(\d*),(\d*):\s(\d*)x(\d*)").unwrap();
@@ -41,7 +41,7 @@ pub fn puzzle1() {
 }
 
 pub fn puzzle2() {
-    let filename = "input/3.2.txt";
+    let filename = "input/3.txt";
     let file = File::open(filename).expect("There was a problem opening the file:");
     let re = Regex::new(r"#(\d*)\s@\s(\d*),(\d*):\s(\d*)x(\d*)").unwrap();
 

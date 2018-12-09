@@ -3,7 +3,7 @@ use std::fs::File;
 use std::io::{BufRead, BufReader};
 
 pub fn puzzle1() {
-    let filename = "input/2.1.txt";
+    let filename = "input/2.txt";
     let file = File::open(filename).expect("There was a problem opening the file:");
 
     let (mut two_count, mut three_count) = (0, 0);
@@ -31,7 +31,7 @@ pub fn puzzle1() {
 }
 
 pub fn puzzle2() {
-    let filename = "input/2.2.txt";
+    let filename = "input/2.txt";
     let file = File::open(filename).expect("There was a problem opening the file:");
 
     let mut ids: Vec<String> = vec![];

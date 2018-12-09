@@ -4,7 +4,7 @@ use std::fs::File;
 use std::io::{BufRead, BufReader};
 
 pub fn puzzle1() {
-    let filename = "input/1.1.txt";
+    let filename = "input/1.txt";
     let file = File::open(filename).expect("There was a problem opening the file:");
 
     let mut drift = 0;
@@ -21,7 +21,7 @@ pub fn puzzle1() {
 }
 
 pub fn puzzle2() {
-    let file_name = "./input/1.2.txt";
+    let file_name = "./input/1.txt";
 
     let file = File::open(file_name).expect("failed to open file");
     let buf_reader = BufReader::new(file);
